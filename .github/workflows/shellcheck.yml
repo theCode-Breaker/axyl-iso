@@ -14,6 +14,13 @@ jobs:
         scandir: './installation-scripts'
       env:
         SHELLCHECK_OPTS: -x
+    - name: Run ShellCheck on customize airootfs script
+      uses: ludeeus/action-shellcheck@master
+      with:
+        scandir: './archiso/airootfs/root'
+        ignore: './archiso/airootfs/root/.automated_script.sh'
+      env:
+        SHELLCHECK_OPTS: -x
     - name: Run ShellCheck on usr/local/bin
       uses: ludeeus/action-shellcheck@master
       with:
