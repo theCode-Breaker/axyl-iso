@@ -14,10 +14,17 @@ jobs:
         scandir: './installation-scripts'
       env:
         SHELLCHECK_OPTS: -x
+    - name: Run ShellCheck on root 
+      uses: ludeeus/action-shellcheck@master
+      with:
+        scandir: './archiso/airootfs/root'
+        ignore_names: '.automated_script.sh' '.zlogin'
+      env:
+        SHELLCHECK_OPTS: -x
     - name: Run ShellCheck on usr/local/bin
       uses: ludeeus/action-shellcheck@master
       with:
         scandir: './archiso/airootfs/usr/local/bin'
-        ignore: './archiso/airootfs/usr/local/bin/choose-mirror'
+        ignore_names: 'choose-mirror'
       env:
         SHELLCHECK_OPTS: -x
