@@ -18,7 +18,7 @@ jobs:
       uses: ludeeus/action-shellcheck@master
       with:
         scandir: './archiso/airootfs/root'
-        ignore_names: '.automated_script.sh' '.zlogin'
+        ignore_names: '.automated_script.sh'
       env:
         SHELLCHECK_OPTS: -x
     - name: Run ShellCheck on usr/local/bin
