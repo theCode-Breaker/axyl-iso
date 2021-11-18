@@ -293,5 +293,6 @@ echo "################################################################## "
 echo
 
 if [[ -f "$HOME/Axyl-Iso/axyl-$(date +%Y.%m.%d)-x86_64.iso" ]]; then
-  notify-send -a "Build Axyl iso" -t 10000 "Axyl Iso has finished building..." --icon="$(dirname $PWD)/archiso/airootfs/usr/share/axyl.png"
+  pdir=$(dirname "$PWD")
+  notify-send -a "Build Axyl iso" -t 10000 "Axyl Iso has finished building..." --icon="$pdir/archiso/airootfs/usr/share/axyl.png"
 fi
