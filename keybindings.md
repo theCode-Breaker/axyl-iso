@@ -21,7 +21,7 @@ Axyl's window managers all share the same set of Global Keybindings, with some W
 | `Ctrl + Shft + R`      | Reload Current Session                   |
 | `Super + [1..7]`           | Switches to Workspace 1 to 7             |
 | `Super + Shft + [1..7]`    | Move Apps/Windows to Workspace 1 to 7    |
-| `Ctrl + X`             | Launch Powermenu                         |
+| `Super + X`            | Launch Powermenu                         |
 | `Super + Enter`            | Launch Terminal (Alacritty)              |
 | `Super + C`                | Close/Kill Window                        |
 | `Super`                    | Launch j4-dmenu-desktop                  |
