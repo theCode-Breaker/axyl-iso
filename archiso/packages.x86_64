@@ -165,6 +165,7 @@ papirus-icon-theme
 ###############
 ttf-dejavu
 ttf-liberation
+nerd-fonts-jetbrainsmono
 
 ###################
 #### Utilities ####
@@ -224,6 +225,7 @@ make
 polybar
 xdg-utils
 xdotool
+xfce4-terminal
 
 ##############
 #### Grub ####
@@ -325,6 +327,5 @@ ksuperkey
 networkmanager-dmenu-git
 paru-bin
 shell-color-scripts
-tty-clock
 unimatrix-git
 xfce-polkit
