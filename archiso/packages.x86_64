@@ -165,7 +165,7 @@ papirus-icon-theme
 ###############
 ttf-dejavu
 ttf-liberation
-nerd-fonts-jetbrainsmono
+nerd-fonts-jetbrains-mono
 
 ###################
 #### Utilities ####
