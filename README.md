@@ -69,7 +69,7 @@
     </tr>
     <tr>
       <td>
-        <img src="https://user-images.githubusercontent.com/39676098/141485970-bc75299d-4e08-43d6-83c0-1472b4306a90.png" alt="i3">
+        <img src="https://raw.githubusercontent.com/axyl-os/axyl-os.github.io/master/assets/img/i3wm.png" alt="i3">
       </td>
     </tr>
   </table>
