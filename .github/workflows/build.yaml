@@ -1,4 +1,4 @@
-name: Build Arch ISO
+name: Build Axyl ISO
 
 on:
   schedule:
@@ -45,8 +45,8 @@ jobs:
 
       - name: Generate release Markdown file
         run: |
-          echo "\`MD5:\` \``md5sum archlinux-$DATE-x86_64.iso`\`"   >>RELEASE.md
-          echo "\`SHA1:\` \``sha1sum archlinux-$DATE-x86_64.iso`\`" >>RELEASE.md
+          echo "\`MD5:\` \``md5sum axyl-$DATE-x86_64.iso`\`"   >>RELEASE.md
+          echo "\`SHA1:\` \``sha1sum axyl-$DATE-x86_64.iso`\`" >>RELEASE.md
 
       - name: Create tag and release
         uses: ncipollo/release-action@v1
@@ -55,5 +55,5 @@ jobs:
           tag: ${{ env.DATE }}
           commit: main
           bodyFile: RELEASE.md
-          artifacts: "Axyl-${{ env.DATE }}-x86_64.iso"
+          artifacts: "axyl-${{ env.DATE }}-x86_64.iso"
           token: ${{ secrets.GITHUB_TOKEN }}
