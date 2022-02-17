@@ -38,7 +38,7 @@ jobs:
         run: pacman -Syu --noconfirm archiso
 
       - name: Copy profile to build directory
-        run: cp -r axyl-iso/archiso* /tmp/$DATE
+        run: cp -r .github/workflows/archiso* /tmp/$DATE
 
       - name: Build ISO
         run: mkarchiso -v -w work/ -o ./ /tmp/$DATE
