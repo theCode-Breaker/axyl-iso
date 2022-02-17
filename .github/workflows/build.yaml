@@ -38,7 +38,7 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           name: Axyl ${{ env.DATE }}
-          tag: ${{ env.DATE }}
+          tag: v1
           commit: main
           bodyFile: RELEASE.md
           artifacts: "axyl-${{ env.DATE }}-x86_64.iso"
