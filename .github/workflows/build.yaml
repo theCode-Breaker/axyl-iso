@@ -23,17 +23,6 @@ jobs:
       - name: Set current date as environment variable
         run: echo "DATE=`date +'%Y.%m.%d'`" >>$GITHUB_ENV
 
-      - name: Create temporary build directory
-        run: mkdir -p /tmp/$DATE/airootfs/root/
-
-      - name: Add notes to .zprofile
-        run: |
-          echo ". /usr/share/makepkg/util/message.sh"                                                            >>/tmp/$DATE/airootfs/root/.zprofile
-          echo -e "colorize\n"                                                                                   >>/tmp/$DATE/airootfs/root/.zprofile
-          echo "msg \"This is an unofficial ISO created by GitHub Actions on $DATE from run ID $GITHUB_RUN_ID\"" >>/tmp/$DATE/airootfs/root/.zprofile
-          echo "msg2 \"Check $GITHUB_SERVER_URL/$GITHUB_REPOSITORY#readme for more details\""                    >>/tmp/$DATE/airootfs/root/.zprofile
-          echo "echo \"\""                                                                                       >>/tmp/$DATE/airootfs/root/.zprofile
-
       - name: Update packages and install archiso
         run: pacman -Syu --noconfirm archiso
 
