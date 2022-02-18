@@ -29,7 +29,17 @@ jobs:
       - name: Build ISO
         run: mkarchiso -v -w work/ -o ./ ./archiso/
         
-      - uses: actions/upload-artifact@v2
+      - name: Generate release Markdown file
+        run: |
+          echo "\`MD5:\` \``md5sum axyl-$DATE-x86_64.iso`\`"   >>RELEASE.md
+          echo "\`SHA1:\` \``sha1sum axyl-$DATE-x86_64.iso`\`" >>RELEASE.md
+      
+      - name: Create tag and release
+        uses: ncipollo/release-action@v1
         with:
-          name: Axyl
-          path: out/*
+          name: Axyl ${{ env.DATE }}
+          tag: ${{ env.DATE }}
+          commit: main
+          bodyFile: RELEASE.md
+          artifacts: "axyl-${{ env.DATE }}.iso"
+          token: ${{ secrets.GITHUB_TOKEN }}
