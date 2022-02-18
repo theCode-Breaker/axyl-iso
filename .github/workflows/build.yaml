@@ -40,7 +40,7 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: ${{ env.DATE }}
           prerelease: false
-          title: "Daily Builds"
+          title: "Axyl"
           files: |
             out/*
             
