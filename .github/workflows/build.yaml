@@ -27,14 +27,14 @@ jobs:
         run: pacman -Syu --noconfirm archiso
 
       - name: Build ISO
-        run: mkarchiso -v -w work/ -o ./ ./archiso/
+        run: bash build.sh
+      
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Axyl ${{ env.DATE }}
+          path: out/*
         
-      - name: Generate release Markdown file
-        run: |
-          echo "\`MD5:\` \``md5sum axyl-$DATE-x86_64.iso`\`"   >>RELEASE.md
-          echo "\`SHA1:\` \``sha1sum axyl-$DATE-x86_64.iso`\`" >>RELEASE.md
-          
-      - name: Create tag and release
+      - name: Release
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
@@ -42,5 +42,5 @@ jobs:
           prerelease: false
           title: "Daily Builds"
           files: |
-             ./
+            out/*
             
