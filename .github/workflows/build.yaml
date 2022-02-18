@@ -33,13 +33,14 @@ jobs:
         run: |
           echo "\`MD5:\` \``md5sum axyl-$DATE-x86_64.iso`\`"   >>RELEASE.md
           echo "\`SHA1:\` \``sha1sum axyl-$DATE-x86_64.iso`\`" >>RELEASE.md
-      
+          
       - name: Create tag and release
-        uses: ncipollo/release-action@v1
+        uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          name: Axyl ${{ env.DATE }}
-          tag: ${{ env.DATE }}
-          commit: main
-          bodyFile: RELEASE.md
-          artifacts: "axyl-${{ env.DATE }}.iso"
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: "Daily Builds"
+          files: |
+             ./
+            
