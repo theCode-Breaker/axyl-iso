@@ -28,11 +28,6 @@ jobs:
 
       - name: Build ISO
         run: bash build.sh
-      
-      - uses: actions/upload-artifact@v2
-        with:
-          name: Axyl ${{ env.DATE }}
-          path: out/*
         
       - name: Release
         uses: "marvinpinto/action-automatic-releases@latest"
