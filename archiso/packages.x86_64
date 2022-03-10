@@ -38,7 +38,6 @@ gnu-netcat
 gpart
 gpm
 gptfdisk
-grml-zsh-config
 hdparm
 intel-ucode
 ipw2100-fw
@@ -213,6 +212,7 @@ virtualbox-guest-utils
 alacritty
 archlinux-keyring
 base-devel
+bat
 cowfortune
 fish
 gpick
@@ -222,10 +222,13 @@ libxinerama
 linux-headers
 lxdm-gtk3
 make
+oh-my-zsh-git
 polybar
 xdg-utils
 xdotool
 xfce4-terminal
+zsh-autosuggestions
+zsh-syntax-highlighting
 
 ##############
 #### Grub ####
@@ -309,6 +312,7 @@ viewnior
 ####################
 ffmpeg
 ffmpegthumbnailer
+mpv
 
 ######################
 #### Text Editors ####
@@ -322,7 +326,6 @@ vim
 cava
 devour
 i3lock-color
-j4-dmenu-desktop
 ksuperkey
 networkmanager-dmenu-git
 paru-bin
