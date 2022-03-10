@@ -20,7 +20,7 @@ echo
 	#isoLabel='arcolinux-next-'$arcolinuxVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 59-1"
+	archisoRequiredVersion="archiso 61-1"
 	buildFolder=$HOME"/Axyl-Build"
 	outFolder=$HOME"/Axyl-Iso"
 	archisoVersion=$(sudo pacman -Q archiso)
@@ -292,7 +292,9 @@ tput sgr0
 echo "################################################################## "
 echo
 
+PDIR=$(dirname "$PWD")
 if [[ -f "$HOME/Axyl-Iso/axyl-$(date +%Y.%m.%d)-x86_64.iso" ]]; then
-  pdir=$(dirname "$PWD")
   notify-send -a "Build Axyl iso" -t 10000 "Axyl Iso has finished building..." --icon="$pdir/archiso/airootfs/usr/share/axyl.png"
+else
+  notify-send -a "Build Axyl iso" -t 10000 -u Critical "Axyl Iso has has not been found..." --icon="$pdir/archiso/airootfs/usr/share/axyl.png"
 fi
