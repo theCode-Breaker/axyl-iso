@@ -226,7 +226,7 @@ polybar
 xdg-utils
 xdotool
 xfce4-terminal
-oh-my-zsh-git
+#oh-my-zsh-git
 zsh-autosuggestions
 zsh-syntax-highlighting
 
