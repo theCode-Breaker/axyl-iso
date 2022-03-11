@@ -222,11 +222,11 @@ libxinerama
 linux-headers
 lxdm-gtk3
 make
-oh-my-zsh-git
 polybar
 xdg-utils
 xdotool
 xfce4-terminal
+oh-my-zsh-git
 zsh-autosuggestions
 zsh-syntax-highlighting
 
