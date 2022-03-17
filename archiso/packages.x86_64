@@ -323,6 +323,7 @@ vim
 ######################
 #### AUR Packages ####
 ######################
+ani-cli-git
 cava
 devour
 i3lock-color
@@ -333,3 +334,4 @@ phinger-cursors
 shell-color-scripts
 unimatrix-git
 xfce-polkit
+ytfzf-git
