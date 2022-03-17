@@ -214,7 +214,7 @@ archlinux-keyring
 base-devel
 bat
 cowfortune
-fish
+fzf
 gpick
 gtop
 htop
@@ -313,6 +313,8 @@ viewnior
 ffmpeg
 ffmpegthumbnailer
 mpv
+youtube-dl
+yt-dlp
 
 ######################
 #### Text Editors ####
