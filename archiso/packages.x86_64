@@ -277,7 +277,7 @@ curl
 blueman
 bluez
 bluez-utils
-pulseaudio-bluetooth
+blueberry
 
 ###############
 #### Sound ####
@@ -287,9 +287,12 @@ alsa-tools
 alsa-utils
 pavucontrol
 portaudio
-pulseaudio
-pulseaudio-alsa
-pulseaudio-equalizer-ladspa
+pipewire
+wireplumber
+pipewire-alsa
+pipewire-jack
+pipewire-zeroconf
+pipewire-pulse
 
 ###############
 #### Files ####
