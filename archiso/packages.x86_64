@@ -214,7 +214,7 @@ archlinux-keyring
 base-devel
 bat
 cowfortune
-fish
+fzf
 gpick
 gtop
 htop
@@ -277,7 +277,7 @@ curl
 blueman
 bluez
 bluez-utils
-pulseaudio-bluetooth
+blueberry
 
 ###############
 #### Sound ####
@@ -287,9 +287,12 @@ alsa-tools
 alsa-utils
 pavucontrol
 portaudio
-pulseaudio
-pulseaudio-alsa
-pulseaudio-equalizer-ladspa
+pipewire
+wireplumber
+pipewire-alsa
+pipewire-jack
+pipewire-zeroconf
+pipewire-pulse
 
 ###############
 #### Files ####
@@ -313,6 +316,8 @@ viewnior
 ffmpeg
 ffmpegthumbnailer
 mpv
+youtube-dl
+yt-dlp
 
 ######################
 #### Text Editors ####
@@ -323,12 +328,15 @@ vim
 ######################
 #### AUR Packages ####
 ######################
+ani-cli-git
 cava
 devour
 i3lock-color
 ksuperkey
 networkmanager-dmenu-git
 paru-bin
+phinger-cursors
 shell-color-scripts
 unimatrix-git
 xfce-polkit
+ytfzf-git

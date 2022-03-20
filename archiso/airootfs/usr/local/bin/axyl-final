@@ -35,7 +35,7 @@ rm -f /etc/sudoers.d/g_wheel
 rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
 rm -f /etc/systemd/system/etc-pacman.d-gnupg.mount
 rm -f /etc/systemd/system/pacman-init.service
-rm /root/{.automated_script.sh,.zlogin}
+rm -f /root/{.automated_script.sh,.zlogin}
 
 echo "Permission of root"
 echo "#################################"
@@ -46,4 +46,5 @@ echo "End axyl-final"
 echo "#################################"
 rm -f /usr/local/bin/calinstall
 rm -f /usr/local/bin/calinstall-debug
-rm /usr/local/bin/axyl-final
+rm -f /usr/local/bin/remove-nvidia
+rm -f /usr/local/bin/axyl-final

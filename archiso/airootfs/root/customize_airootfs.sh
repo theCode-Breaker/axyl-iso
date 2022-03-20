@@ -11,3 +11,6 @@ for dfile in "${rootdots[@]}"; do if [[ -e "$skeldir/$dfile" ]]; then cp -rf "$s
 
 declare -a rootconfig=(i3 geany gtk-3.0 Kvantum neofetch nvim qt5ct ranger Thunar fish)
 for cfg in "${rootconfig[@]}"; do if [[ -e "$skeldir/.config/$cfg" ]]; then cp -rf "$skeldir"/.config/"$cfg" "$rootdir"; fi done
+
+# Replace Default Mouse Cursor Theme
+sed -i 's/Inherits=.*/Inherits=phinger-cursors/g' /usr/share/icons/default/index.theme

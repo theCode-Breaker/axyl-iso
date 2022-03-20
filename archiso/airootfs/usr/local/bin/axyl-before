@@ -15,4 +15,4 @@ pacman-key --populate
 echo "#################################"
 echo "End axyl-before"
 echo "#################################"
-rm /usr/local/bin/axyl-before
+rm -f /usr/local/bin/axyl-before
