@@ -275,6 +275,7 @@ curl
 #### Bluetooth ####
 ###################
 bluez
+bluez-utils
 blueberry
 
 ###############
@@ -283,6 +284,7 @@ blueberry
 alsa-plugins
 alsa-tools
 alsa-utils
+pamixer
 pavucontrol
 portaudio
 pipewire
