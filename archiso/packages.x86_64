@@ -178,7 +178,7 @@ lxappearance
 maim
 picom
 sxhkd
-udiskie
+udisks2
 unzip
 xclip
 xfce4-power-manager
@@ -274,7 +274,6 @@ curl
 ###################
 #### Bluetooth ####
 ###################
-blueman
 bluez
 bluez-utils
 blueberry
@@ -285,6 +284,7 @@ blueberry
 alsa-plugins
 alsa-tools
 alsa-utils
+pamixer
 pavucontrol
 portaudio
 pipewire
