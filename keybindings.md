@@ -38,6 +38,44 @@ Axyl's window managers all share the same set of Global Keybindings, with some W
 | `Ctrl + Alt + PrtSc`   | Screenshot Selected Area                 |
 
 
+<a id="i3wmkeys"></a>
+## i3wm Keybindings
+
+<img src="https://axyl-os.github.io/assets/img/window-managers/i3.svg" alt="i3wm" width=100px>
+
+|        Keybind         |                 Function                 |
+| ---------------------- | ---------------------------------------- |
+| `Super + Shift + C`        | Reloads the configuration file  |
+| `Ctrl  + Shift + R`        | Restart i3 Session  |
+| `Ctrl  + Shift + Q`        | Quit i3 Session     |
+| `Super + C`                | Kill focused window |
+| `Super + Esc`              | Reloads SXHKD Configuration              |
+| `Super + Space`            | Toggle Focus Mode (Floating/Tiling Windows) |
+| `Super + Shift + Space`    | Toggle Currently Focused Window's Floating/Tiling State |
+| `Super + [H,J,K,L]`        | Change Focus [Up,Left,Right,Down](Can use arrow keys too) |
+| `Super + Shift + [H,J,K,L]`| Move Focused Window [Up,Left,Right,Down](Ditto arrows) |
+| `Super + B`                | Split in horizontal orientation  |
+| `Super + V`                | Split in vertical orientation    |
+| `Super + F`                | Toggle focused container fullscreen mode |
+| `Super + [Q,A,Z]`           | Change container layout [Stacking,Tabbed,Split] |
+| `Super + [1..7]`           | Switches to Workspace 1 to 7             |
+| `Super + Shft + [1..7]`    | Move Apps/Windows to Workspace 1 to 7    |
+| `Super + X`            | Launch Powermenu                         |
+| `Super + Enter`            | Launch Terminal (xfce4-terminal)              |
+| `Super`                    | Launch j4-dmenu-desktop                  |
+| `Super + D`                | Launch dmenu                             |
+| `Super + N`                | Launch NetworkManager dmenu              |
+| `Alt + E`              | Launch Edit Configs dmenu                |
+| `Alt + L`              | Launch Quick Links dmenu                 |
+| `Ctrl + Alt + L`       | Lock Screen                              |
+| `Super + Shft + W`         | Launch Firefox                           |
+| `Super + Shft + F`         | Launch Thunar                            |
+| `Super + Shft + R`         | Ranger Quick Launch                      |
+| `PrtSc`                | Screenshot                               |
+| `Ctrl + PtrSc`         | Screenshot Active Window                 |
+| `Ctrl + Alt + PrtSc`   | Screenshot Selected Area                 |
+
+
 <a id="bspwmkeys"></a>
 ## bspwm Keybindings
 

@@ -7,23 +7,21 @@ arch-install-scripts
 archinstall
 b43-fwcutter
 base
-bind-tools
+bind
 brltty
 broadcom-wl
 btrfs-progs
-ckbcomp
 clonezilla
 cloud-init
-crda
 cryptsetup
 darkhttpd
 ddrescue
 dhclient
 dhcpcd
 diffutils
+dmidecode
 dmraid
 dnsmasq
-dnsutils
 dosfstools
 e2fsprogs
 edk2-shell
@@ -39,9 +37,8 @@ gpart
 gpm
 gptfdisk
 hdparm
+hyperv
 intel-ucode
-ipw2100-fw
-ipw2200-fw
 irssi
 iw
 iwd
@@ -54,6 +51,7 @@ libusb-compat
 linux
 linux-atm
 linux-firmware
+linux-firmware-marvell
 livecd-sounds
 lsscsi
 lvm2
@@ -66,7 +64,6 @@ memtest86+
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
-mkinitcpio-openswap
 modemmanager
 mtools
 nano
@@ -77,6 +74,8 @@ nilfs-utils
 nmap
 ntfs-3g
 nvme-cli
+open-iscsi
+open-vm-tools
 openconnect
 openssh
 openvpn
@@ -88,6 +87,7 @@ ppp
 pptpclient
 pv
 qemu-guest-agent
+refind
 reflector
 reiserfsprogs
 rp-pppoe
@@ -111,6 +111,7 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
+vim
 vpnc
 wireless-regdb
 wireless_tools
@@ -204,7 +205,7 @@ nvidia-settings
 #####################
 #### Virtual Box ####
 #####################
-virtualbox-guest-utils
+virtualbox-guest-utils-nox
 
 ###############
 #### Other ####
