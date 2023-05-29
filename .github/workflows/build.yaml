@@ -25,7 +25,7 @@ jobs:
 
       - name: Update packages and install archiso
         run: |
-          pacman -Sy --noconfirm --needed archlinux-keyring
+          pacman -Sy --noconfirm --needed archlinux-keyring pacman-mirrorlist
           pacman -Syu --noconfirm archiso mkinitcpio-archiso git squashfs-tools
 
       - name: Build ISO
